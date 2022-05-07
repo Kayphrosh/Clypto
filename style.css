@@ -248,16 +248,13 @@ body {
 }
 
 @media screen and (max-width: 786px)  {
+    .heroe {
+        background: url(./Images/bg-mobile.svg);
+    }
     .top-bar {
-        background-color: rgba(0, 0, 0, 0.808);
-        backdrop-filter: blur(60px);
         border-bottom: 1px solid #f2f2f250;
         padding: 0 1rem;
-        position:  fixed;
-        left: 0;
-        right: 0;
-        top: 0;
-        max-width: 100%;
+        transition: all 0.5s ease-in-out linear;
         z-index: 111;
     }
     .logo img{
@@ -280,7 +277,7 @@ body {
         font-size: 14px;
     }
     .main-text {
-        margin-top: 10rem;
+        margin-top: 8rem;
     }
     .main-text h2 {
         font-size: 32px;
@@ -307,5 +304,9 @@ body {
     }
     .core-features div {
         margin-top: 2rem;
+    }
+    .core-features div span {
+        max-width: 40px;
+        padding: 12px;
     }
 }
