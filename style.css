@@ -252,7 +252,7 @@ body {
         background-color: rgba(0, 0, 0, 0.808);
         backdrop-filter: blur(60px);
         border-bottom: 1px solid #f2f2f250;
-        padding: 0 20px;
+        padding: 0 1rem;
         position:  fixed;
         left: 0;
         right: 0;
