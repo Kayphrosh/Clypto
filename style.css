@@ -296,7 +296,7 @@ body {
     }
     .heroe  form span {
         margin: 0 1rem;
-        column-gap: .5rem;
+        column-gap: 1rem;
     }
     .heroe form button p{
         font-size: 14px;
