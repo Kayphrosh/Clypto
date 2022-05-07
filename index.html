@@ -92,10 +92,16 @@
 
 
 
-    
+
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init();
+        AOS.init({
+            offset: 300,
+            animatedClassName: 'aos-animate', 
+            duration: 500 ,
+            mirror: false,
+            easing: 'ease',
+        });
     </script>
     <script src="app.js"></script>
 </body>
