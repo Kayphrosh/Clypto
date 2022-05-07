@@ -37,6 +37,9 @@ body {
     align-items: center;
     height: 80px;
     padding: 0 80px;
+    transition: all 0.5s ease-in-out linear;
+    /* border-bottom: 1px solid #f2f2f250; */
+    z-index: 111;
 } 
 .logo {
     display: flex;
@@ -252,10 +255,10 @@ body {
         background: url(./Images/bg-mobile.svg);
     }
     .top-bar {
+        height: 70px;
         border-bottom: 1px solid #f2f2f250;
         padding: 0 1rem;
-        transition: all 0.5s ease-in-out linear;
-        z-index: 111;
+
     }
     .logo img{
         width: 30px;

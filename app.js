@@ -10,10 +10,12 @@ function fixBar() {
         topBar.style.right = '0px'
         topBar.style.backdropFilter = 'blur(20px)';
         topBar.style.background = 'rgba(0, 0, 0, 0.8)'
+        topBar.style.borderBottom = '1px solid #f2f2f250'
 
     } else {
         topBar.style.position = 'relative'
         topBar.style.backdropFilter = 'blur(0px)';
         topBar.style.background = 'none'
+        topBar.style.borderBottom = 'none'
     }
 }
