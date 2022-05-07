@@ -37,7 +37,8 @@ body {
     align-items: center;
     height: 80px;
     padding: 0 80px;
-    transition: all 0.5s ease-in-out linear;
+
+    transition: all 1s ease;
     /* border-bottom: 1px solid #f2f2f250; */
     z-index: 111;
 } 
