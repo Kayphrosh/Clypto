@@ -161,12 +161,12 @@ body {
     background: #FFFFFF;
     border-radius: 6px;
 }
-.heroe form button:nth-child(2) {
+.heroe form button:nth-child(1) {
     background-color: #CB6E17;
     border-color: #CB6E17;
     color: #F2F2F2;
 }
-.heroe form button:nth-child(2) p{
+.heroe form button:nth-child(1) p{
     color: #F2F2F2;
 }
 .heroe form p {
