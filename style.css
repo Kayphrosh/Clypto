@@ -260,7 +260,6 @@ body {
         height: 70px;
         border-bottom: 1px solid #f2f2f250;
         padding: 0 1rem;
-
     }
     .logo img{
         width: 30px;
@@ -282,7 +281,7 @@ body {
         font-size: 14px;
     }
     .main-text {
-        margin-top: 8rem;
+        margin-top: 6rem;
     }
     .main-text h2 {
         font-size: 32px;
