@@ -424,6 +424,7 @@ body {
     }
     .about header h3,
     .api-container header h3 {
+        line-height: 36px;
         font-size: 24px;
     }
     .app-screens {
@@ -528,9 +529,6 @@ body {
     .api-container {
         background: url(./Images/bg-white-mobile.svg);
         padding: 4rem 1rem;
-    }
-    .api-container header h3 {
-        line-height: 36px;
     }
     .api-container header p {
         font-size: 16px;
