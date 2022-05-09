@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
@@ -140,7 +139,7 @@
                         consectetur adipiscing elit. Lectus nulla nunc sollicitudin.
                     </p>
                     <footer>
-                        <a href="#">view our documentation</a>
+                        <a href="#">View our documentation</a>
                         <span class="iconify" data-icon="bi:arrow-right"></span>
                     </footer>
                 </span>
@@ -151,7 +150,7 @@
                         consectetur adipiscing elit. Lectus nulla nunc sollicitudin.
                     </p>
                     <footer>
-                        <a href="#">get in touch with our team</a>
+                        <a href="#">Get in touch with our team</a>
                         <span class="iconify" data-icon="bi:arrow-right"></span>
                     </footer>
                 </span>
@@ -162,7 +161,7 @@
         </main>
     </section>
 
-    <!-- <script>
+    <script>
         function isElementInViewport (el) {
             if (typeof jQuery === "function" && el instanceof jQuery) {
                 el = el[0];
@@ -181,15 +180,17 @@
                 $(this).removeAttr("data-aos");
             }
         });
-    </script> -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    </script>
 
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
+        setTimeout(function () { AOS.init(); }, 1000);
         AOS.init({
-            offset: 100,
+            offset: 60,
             animatedClassName: 'aos-animate', 
-            duration: 1000 ,
+            duration: 1500 ,
             mirror: false,
             easing: 'ease',
             delay: 300, 
