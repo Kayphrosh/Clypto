@@ -257,7 +257,8 @@ body {
 }
 
 @media screen and (max-width: 786px)  {
-    .heroe {
+    .heroe,
+    .about {
         background: url(./Images/bg-mobile.svg);
     }
     .top-bar {
@@ -323,7 +324,7 @@ body {
     display: flex;
     flex-direction: column;
     padding: 4rem 0;
-    max-height: 100vh;
+    max-height: 100%;
 }
 .about header {
     display: flex;
@@ -335,7 +336,6 @@ body {
     font-family: 'Azeret Mono', monospace;
     font-size: 32px;
     font-weight: 700;
-    line-height: 56px;
     letter-spacing: 0em;
     text-align: center;
     overflow: hidden;
@@ -343,25 +343,28 @@ body {
 .about main {
     display: flex;
     justify-content: space-between;
-    padding: 4rem 80px;
+    padding: 4rem 0px;
 }
 .app-screens {
     flex-basis: 60%;
+    margin-left: 80px;
     margin-right: 2rem;
-    border-radius: 20px !important;
+    border-radius: 20px;
     overflow: hidden;
+    
 }
 .app-screens img {
     min-width: 100%;
     max-height:     650px;
     overflow: hidden;
-    border-radius: 20px !important;
+    border-radius: 20px;
 }
 .steps-container {
     position: relative;
     display: flex;
     flex-basis: 50%;
     margin-left: 2rem;
+    margin-right: 80px;
 }
 .steps-container  .progress {
     position:  absolute;
@@ -417,7 +420,7 @@ body {
     }
     .about main {
         flex-direction: column;
-        padding: 4rem 1rem;
+        padding: 4rem 0rem;
     }
     .about header h3,
     .api-container header h3 {
@@ -426,10 +429,15 @@ body {
     .app-screens {
         /* margin: 2rem; */
         margin-right: 0;
+        border-radius: 0px;
+        margin: 0;
+    }
+    .app-screens img {
+        border-radius: 0px;
     }
     .steps-container {
+        margin: 0 1rem;
         margin-top: 4rem;
-        margin-left: 0;
     }
 }
 
@@ -446,10 +454,17 @@ body {
     margin-top: 4rem;
 }
 .api-container header p {
+    font-size: 18px;
+    line-height: 24px;
+    /* or 133% */
+
+    text-align: center;
+    letter-spacing: 0.02em;
     max-width: 600px;
     color: #333333;
     text-align: center;
     margin: auto;
+    margin-top: 1rem;
 }
 .api-container main {
     display: flex;
@@ -492,7 +507,7 @@ body {
 .api-request span footer {
     display: flex;
     justify-content: space-between;
-    padding: 10px 0rem;
+    padding: 1.2rem 0rem;
     background: rgba(97, 3, 22, 0.18);
     border-radius: 3px;
     margin-top: auto;
@@ -500,16 +515,25 @@ body {
 }
 .api-request footer a {
     font-size: 14px;
+    color: #610316;
     padding-left: 2rem;
 }
 .api-request span .iconify {
+    font-size: 20px;
     padding-right: 2rem;
 }
 
 @media screen and (max-width: 786px)  {
     .api-container {
+        background: url(./Images/bg-white-mobile.svg);
         padding: 4rem 1rem;
     }
+
+    .api-container header p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
     .api-request {
         flex-direction: column;
     }
