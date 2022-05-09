@@ -446,6 +446,7 @@ body {
     color: #000000;
     min-height: 60vh;
     padding: 4rem 80px;
+    overflow: hidden;
 }
 .api-container header {
     display: flex;
@@ -456,8 +457,6 @@ body {
 .api-container header p {
     font-size: 18px;
     line-height: 24px;
-    /* or 133% */
-
     text-align: center;
     letter-spacing: 0.02em;
     max-width: 600px;
@@ -470,11 +469,13 @@ body {
     display: flex;
     justify-content: space-between;
     margin-top: 4rem;
+    overflow: hidden;
 }
 .api-request {
     display: flex;
     flex-direction: row;
     flex-basis: 60%;
+    overflow: hidden;
 }
 .api-request span {
     display: flex;
@@ -500,6 +501,7 @@ body {
     padding:0 2rem;
 }
 .api-illustration {
+    overflow: hidden;
     display: flex;
     flex-basis: 40%;
 }
