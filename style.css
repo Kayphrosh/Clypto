@@ -420,23 +420,22 @@ body {
     }
     .about main {
         flex-direction: column;
-        padding: 4rem 0rem;
+        padding: 4rem 1rem;
     }
     .about header h3,
     .api-container header h3 {
         font-size: 24px;
     }
     .app-screens {
-        /* margin: 2rem; */
         margin-right: 0;
-        border-radius: 0px;
+        border-radius: 1-px;
         margin: 0;
     }
     .app-screens img {
-        border-radius: 0px;
+        border-radius: 10px;
     }
     .steps-container {
-        margin: 0 1rem;
+        margin: 0;
         margin-top: 4rem;
     }
 }
@@ -530,12 +529,13 @@ body {
         background: url(./Images/bg-white-mobile.svg);
         padding: 4rem 1rem;
     }
-
+    .api-container header h3 {
+        line-height: 36px;
+    }
     .api-container header p {
         font-size: 16px;
         line-height: 20px;
     }
-
     .api-request {
         flex-direction: column;
     }
@@ -546,15 +546,4 @@ body {
         margin-top: 2rem;
         margin-right: 0rem;
     }
-    /* .api-request span img {
-        width: 50px;
-        padding:0 2rem;
-    }
-    .api-request span h4 {
-        padding:0 2rem;
-    }
-    .api-request span p {
-        color: #333333;
-        padding:0 2rem;
-    }*/
 } 
