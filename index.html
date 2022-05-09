@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
@@ -163,16 +161,37 @@
         </main>
     </section>
 
-
+    <script>
+        function isElementInViewport (el) {
+            if (typeof jQuery === "function" && el instanceof jQuery) {
+                el = el[0];
+            }
+            var position = el.getBoundingClientRect();
+            if(position.top >= 0 && position.bottom <= window.innerHeight) {
+                return true;
+            }
+            if(position.top < window.innerHeight && position.bottom >= 0) {
+                return true;
+            }
+            return false;
+        }
+        $("[data-aos]").each(function() {
+            if (isElementInViewport($(this))) {
+                $(this).removeAttr("data-aos");
+            }
+        });
+    </script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init({
             offset: 120,
             animatedClassName: 'aos-animate', 
-            duration: 2000 ,
+            duration: 500 ,
             mirror: false,
             easing: 'ease',
-            delay: 1000, 
+            delay: 100, 
         });
     </script>
     <script src="app.js"></script>

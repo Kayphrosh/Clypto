@@ -495,10 +495,12 @@ body {
 }
 .api-request span h4 {
     padding:0 2rem;
+    padding-right: 1rem;
 }
 .api-request span p {
     color: #333333;
     padding:0 2rem;
+    padding-right: 1rem;
 }
 .api-illustration {
     overflow: hidden;
@@ -514,6 +516,7 @@ body {
     border-radius: 3px;
     margin-top: auto;
     width: 100%;
+    overflow: hidden;
 }
 .api-request footer a {
     font-size: 14px;
