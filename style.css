@@ -365,6 +365,7 @@ body {
     flex-basis: 50%;
     margin-left: 2rem;
     margin-right: 80px;
+    overflow: hidden;
 }
 .steps-container  .progress {
     position:  absolute;
@@ -379,14 +380,13 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    overflow: hidden;
 }
 .steps span {
     display: flex;
     flex-direction: column;
     margin-top: 1rem;
     padding: 1rem 2rem;
-    /* padding-left: 2rem; */
-    /* z-index: 111;    */
     overflow: hidden;
 }
 .steps span:nth-child(1) {
