@@ -9,7 +9,7 @@ function fixBar() {
         topBar.style.left = '0px'
         topBar.style.right = '0px'
         topBar.style.backdropFilter = 'blur(20px)';
-        topBar.style.background = 'rgba(0, 0, 0, 0.9)'
+        topBar.style.background = 'rgba(0, 0, 0, 0.8)'
         topBar.style.borderBottom = '1px solid #f2f2f250'
 
     } else {

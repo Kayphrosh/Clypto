@@ -24,7 +24,8 @@ body {
 
 .heroe, 
 .about,
-.api-container {
+.api-container,
+.faq-container  {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -181,7 +182,8 @@ body {
     margin: 0;
     margin-left: 10px;
 }
-.heroe form button:hover, .cta-btn button:hover {
+.heroe form button:hover, 
+.cta-btn button:hover {
     transition: all 0.5s ease;
     opacity: 0.9;
     transform: scale(0.98);
@@ -255,10 +257,16 @@ body {
     margin-top: 1rem;
     overflow: hidden;
 }
+@media screen and (max-width: 986px)  {
+    .top-bar {
+        padding: 0 40px;
+    }
+}
 
 @media screen and (max-width: 786px)  {
     .heroe,
-    .about {
+    .about,
+    .faq-container  {
         background: url(./Images/bg-mobile.svg);
     }
     .top-bar {
@@ -332,7 +340,8 @@ body {
     overflow: hidden;
 }
 .about header h3, 
-.api-container header h3{
+.api-container header h3,
+.faq-container header h3{
     font-family: 'Azeret Mono', monospace;
     font-size: 32px;
     font-weight: 700;
@@ -349,7 +358,7 @@ body {
     flex-basis: 60%;
     margin-left: 80px;
     margin-right: 2rem;
-    border-radius: 20px;
+    /* border-radius: 20px; */
     overflow: hidden;
     
 }
@@ -357,7 +366,7 @@ body {
     min-width: 100%;
     max-height:     650px;
     overflow: hidden;
-    border-radius: 20px;
+    /* border-radius: 20px; */
 }
 .steps-container {
     position: relative;
@@ -413,35 +422,44 @@ body {
     padding-top: 1rem;
     overflow: hidden;
 }
-
+@media screen and (max-width: 986px)  {
+    .app-screens {
+        margin-left: 40px;
+    }
+    .steps-container { 
+        margin-right:  40px;
+    }
+}
 @media screen and (max-width: 786px)  {
     .about {
         max-height: 100%;
     }
     .about main {
         flex-direction: column;
-        padding: 4rem 1rem;
+        padding: 4rem 0rem;
     }
     .about header h3,
-    .api-container header h3 {
+    .api-container header h3,
+    .faq-container header h3 {
         line-height: 36px;
         font-size: 24px;
     }
     .app-screens {
         margin-right: 0;
-        border-radius: 1-px;
+        border-radius: 0px;
         margin: 0;
     }
     .app-screens img {
-        border-radius: 10px;
+        border-radius: 0px;
     }
     .steps-container {
+        padding: 0rem 1rem;
         margin: 0;
         margin-top: 4rem;
     }
 }
 
-.api-container {
+.api-container, .faq-container {
     background: url(./Images/bg-white.svg) !important;
     color: #000000;
     min-height: 60vh;
@@ -527,7 +545,11 @@ body {
     font-size: 20px;
     padding-right: 2rem;
 }
-
+@media screen and (max-width: 986px)  {
+    .api-container {
+        padding: 4rem 40px;
+    }
+}
 @media screen and (max-width: 786px)  {
     .api-container {
         background: url(./Images/bg-white-mobile.svg);
@@ -548,3 +570,116 @@ body {
         margin-right: 0rem;
     }
 } 
+
+
+.faq-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4rem 80px;
+    color: #000000;
+    /* width: 100%; */
+}
+.faq-container header {
+    display: flex;
+    justify-content: center;
+}
+
+.faqs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+.faq {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid rgba(22, 22, 22, 0.5);
+    width: 100%;
+    margin-bottom: 2rem;
+}
+.faq .faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    padding-left: 0;
+}
+.faq-question h6 {
+    text-align: left;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+}
+.faq-question button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.1);
+    color: #CB6E17;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+.faq-answer {
+    display: none;
+}
+
+.contact-us-faq {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem auto;
+    margin-bottom: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.contact-us-faq h4 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 32px;
+    letter-spacing: 0.02em;
+    margin-bottom: .4rem;
+}
+.contact-us-faq p {
+    max-width: 400px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #333333;
+}
+.contact-us-faq a {
+    letter-spacing: 0.02em;
+    text-decoration-line: underline;
+    color: #D17D00;
+}
+@media screen and (max-width: 986px)  {
+    .faq-container {
+        padding: 4rem 40px;
+    }
+}
+@media screen and (max-width: 986px)  {
+    .faq-container {
+        padding: 4rem 1rem;
+    }
+    .faq-question {
+        padding: 1rem 0;
+    }
+    .faq-question h6 {
+        font-size: 16px;
+        font-weight: 700;
+    }
+    .faq-question button {
+        min-width: 30px;
+        height: 30px;
+        font-size:  20px;
+    }
+    .contact-us-faq h4 {
+        font-size: 24px;
+    }
+}
