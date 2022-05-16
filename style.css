@@ -831,7 +831,7 @@ body {
 @media screen and (max-width: 786px)  {
     .download-text {
         margin: 0 1rem;
-        max-height: 300px;
+        max-height: 250px;
         padding: 0 10px;
     }
     .download-text h3 {
