@@ -20,13 +20,15 @@
                 <li><a href='#soluton'>Product</a></li>
                 <li><a href='#soluton'>Contact</a></li>
                 <li><a href='#soluton'>FAQ</a></li>
+                <button>Get Started</button>
             </ul>
             <div class="btn-burger">
                 <div class="cta-btn">
                     <button>Get Started</button>
                 </div>
-                <div class="hamburger">
-                    <span class="iconify" data-icon="heroicons-outline:menu-alt-4"></span>
+                <div class="hamburger" onclick="toggleNav()">
+                    <span class="iconify" id="open" data-icon="bx:menu"></span>
+                    <span class="iconify" id="close" data-icon="material-symbols:close"></span>
                 </div>
             </div>
 
@@ -172,7 +174,8 @@
                         How much is Clyp’s transaction fees
                     </h6>
                     <button class="faq-toggle">
-                        <span class="iconify" data-icon="akar-icons:chevron-down"></span>
+                        <span class="iconify faq-open" data-icon="akar-icons:plus"></span>
+                        <span class="iconify faq-close" data-icon="akar-icons:minus"></span>
                     </button>
                 </span>
                 <span class="faq-answer">
@@ -187,7 +190,8 @@
                         How many currencies can I use in Clyp?
                     </h6>
                     <button class="faq-toggle">
-                        <span class="iconify" data-icon="akar-icons:chevron-down"></span>
+                        <span class="iconify faq-open" data-icon="akar-icons:plus"></span>
+                        <span class="iconify faq-close" data-icon="akar-icons:minus"></span>
                     </button>
                 </span>
                 <span class="faq-answer">
@@ -201,8 +205,9 @@
                     <h6>
                         What is Clyp? 
                     </h6>
-                    <button class="faq-toggle">
-                        <span class="iconify" data-icon="akar-icons:chevron-down"></span>
+                        <button class="faq-toggle">
+                            <span class="iconify faq-open" data-icon="akar-icons:plus"></span>
+                            <span class="iconify faq-close" data-icon="akar-icons:minus"></span>
                     </button>
                 </span>
                 <span class="faq-answer">
@@ -216,8 +221,9 @@
                     <h6>
                         Where is Clyp available?
                     </h6>
-                    <button class="faq-toggle">
-                        <span class="iconify" data-icon="akar-icons:chevron-down"></span>
+                    <button class="faq-toggle" onclick="toggleFaq()">
+                            <span class="iconify faq-open" data-icon="akar-icons:plus"></span>
+                            <span class="iconify faq-close" data-icon="akar-icons:minus"></span>
                     </button>
                 </span>
                 <span class="faq-answer">
@@ -231,9 +237,10 @@
                     <h6>
                         What about Building with Clyp API?
                     </h6>
-                    <button class="faq-toggle">
-                        <span class="iconify" data-icon="akar-icons:chevron-down"></span>
-                    </button>
+                    <button class="faq-toggle" onclick="toggleFaq()">
+                    <span class="iconify faq-open" data-icon="akar-icons:plus"></span>
+                    <span class="iconify faq-close" data-icon="akar-icons:minus"></span>
+                </button>
                 </span>
                 <span class="faq-answer">
                     <p>
@@ -247,7 +254,8 @@
                         How fast is Clyp
                     </h6>
                     <button class="faq-toggle">
-                        <span class="iconify" data-icon="akar-icons:chevron-down"></span>
+                        <span class="iconify faq-open" data-icon="akar-icons:plus"></span>
+                        <span class="iconify faq-close" data-icon="akar-icons:minus"></span>
                     </button>
                 </span>
                 <span class="faq-answer">
@@ -286,7 +294,7 @@
     </section>
     <footer class="main-footer">
         <main>   
-            <div class="quick-links" data-aos="fade-down">
+            <div class="quick-links">
                 <div class="links">
                     <li><a href="./index.html#programmes">About</a></li>
                     <li><a href="./index.html#faq">Features</a></li>
