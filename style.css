@@ -655,6 +655,7 @@ body {
     width: 100%;
     min-height: 80px;
     cursor: pointer;
+    overflow: hidden;
 }
 .faq:hover {
     background-color: #f2f2f252;
@@ -669,6 +670,7 @@ body {
 .faq-answer {
     display: flex;
     max-height: 0;
+    overflow: hidden;
 }
 .faq-answer p {
     font-size: 16px;
@@ -676,9 +678,11 @@ body {
     line-height: 24px;
 }
 .faq.faq-active .faq-answer {
-    max-height: 100px;
+    max-height: 80px;
     padding: 1rem 2rem;
     padding-bottom: 2rem; 
+    transition:  all 0.4s ease-in;
+    overflow: hidden !important;
 }
 
 .faq-actve .faq-toggle .faq-close{
@@ -754,12 +758,18 @@ body {
         padding: 4rem 40px;
     }
 }
-@media screen and (max-width: 986px)  {
+@media screen and (max-width: 786px)  {
     .faq-container {
         padding: 4rem 1rem;
     }
-    .faq-question {
-        padding: 1rem 0;
+    .faq .faq-question {
+        padding: 1rem 1rem;
+    }
+    .faq.faq-active .faq-answer {
+        padding: 1rem 1rem;
+        padding-top: 0;
+        padding-bottom: 2rem; 
+        transition:  all 0.4s ease-in;
     }
     .faq-question h6 {
         font-size: 16px;
