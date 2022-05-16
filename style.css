@@ -25,7 +25,9 @@ body {
 .heroe, 
 .about,
 .api-container,
-.faq-container  {
+.faq-container,
+.download-app,
+.main-footer  {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -40,7 +42,6 @@ body {
     align-items: center;
     height: 80px;
     padding: 0 80px;
-
     transition: all 1s ease;
     /* border-bottom: 1px solid #f2f2f250; */
     z-index: 111;
@@ -95,7 +96,7 @@ body {
     flex-direction: column;
     justify-content: center;
     margin: 0 auto;
-    margin-top: 2rem;
+    margin-top: 4rem;
     width: 100%;
     max-width: 900px;
 }
@@ -133,7 +134,7 @@ body {
     max-width: 650px;
     margin-top: 2rem;
 }
-.heroe form span {
+.heroe form span{
     display: flex;
     margin: 0 auto;
     column-gap: 1rem;
@@ -151,7 +152,8 @@ body {
     background-color: transparent;
     border-radius: 7px;
 } */
-.heroe form button {
+.heroe form button,
+.download-app span button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -162,22 +164,25 @@ body {
     color: #000000;
     border: 1px solid #fff;
     outline: none;
-    /* position: absolute; */
     width: 180px;
     height: 50px;
     background: #FFFFFF;
     border-radius: 6px;
 }
-.heroe form button:nth-child(1) {
+.heroe form button:nth-child(1),
+.download-text span button:nth-child(1)  {
     background-color: #CB6E17;
     border-color: #CB6E17;
     color: #F2F2F2;
 }
-.heroe form button:nth-child(1) p{
+.heroe form button:nth-child(1) p,
+ .download-text span button:nth-child(1){  
     color: #F2F2F2;
 }
-.heroe form p {
+.heroe form p,
+.download-app button p {
     color: #333333;
+    font-weight: 400;
     padding: 0;
     margin: 0;
     margin-left: 10px;
@@ -266,7 +271,9 @@ body {
 @media screen and (max-width: 786px)  {
     .heroe,
     .about,
-    .faq-container  {
+    .faq-container,
+    .download-app,
+    .main-footer {
         background: url(./Images/bg-mobile.svg);
     }
     .top-bar {
@@ -576,9 +583,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 4rem 80px;
+    padding: 5rem 80px;
     color: #FFFFFF;
-    /* width: 100%; */
 }
 .faq-container header {
     display: flex;
@@ -591,20 +597,25 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 4rem;
+    padding: 0 2px;
 }
 .faq {
     display: flex;
     flex-direction: column;
-    border-bottom: 2px solid rgba(241, 241, 241, 0.5);
-    width: 100%;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.164);
+    background-color: #f2f2f21a;
     margin-bottom: 2rem;
+    border-radius: 10px;
+    width: 100%;
+    min-height: 80px;
 }
 .faq .faq-question {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    padding-left: 0;
+    padding-left: 1rem;
 }
 .faq-question h6 {
     text-align: left;
@@ -621,9 +632,9 @@ body {
     color: #CB6E17;
     border: none;
     outline: none;
-    font-size: 20px;
-    width: 35px;
-    height: 35px;
+    font-size: 18px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
 }
 .faq-answer {
@@ -635,12 +646,12 @@ body {
     flex-direction: column;
     margin: 3rem auto;
     margin-bottom: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Azeret Mono', monospace;
 }
 .contact-us-faq h4 {
     text-align: center;
     font-weight: 600;
-    font-size: 32px;
+    font-size: 28px;
     letter-spacing: 0.02em;
     margin-bottom: .4rem;
 }
@@ -682,5 +693,127 @@ body {
     }
     .contact-us-faq h4 {
         font-size: 24px;
+    }
+}
+
+.download-app {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 350px !important;
+    padding: 2rem 0px;
+}
+.download-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    padding: 0rem;
+    width: 100%;
+    max-height: 350px;
+    margin: 0 80px;
+}
+.download-text h3 {
+    font-family: 'Azeret Mono', monospace;
+    font-size: 48px;
+    text-align: center;
+}
+.download-text span {
+    color: #CB6E17;
+}
+.download-btn {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: none !important;
+    column-gap: 1rem;
+    margin-top: 2rem;
+}
+.download-btn button:nth-child(1) p{
+    color: #F2F2F2 !important;
+}
+@media screen and (max-width: 986px)  {
+    .download-text {
+        margin: 0 40px;
+    }
+}
+@media screen and (max-width: 786px)  {
+    .download-text {
+        margin: 0 1rem;
+        max-height: 300px;
+    }
+    .download-text h3 {
+        font-size: 32px;
+    }
+}
+
+.main-footer {
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    margin-top: 4rem;
+    padding: 0 80px;
+    min-height: 100px;
+}
+.main-footer main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.quick-links {
+    display: flex;
+    justify-content: space-between;
+
+}
+main .quick-links:nth-child(1) {
+    border-bottom: 1px solid #F2F2F2;
+    padding-bottom: 1rem;
+}
+.quick-links div {
+    display: flex;
+    /* justify-content: space-between; */
+    flex-direction: row;
+    margin-top: 1rem;
+}
+.quick-links div li {
+    list-style: none;
+}
+.quick-links div a {
+    color: #F2F2F2;
+}
+.links {
+    display: flex;
+    column-gap: 2rem;
+}
+.contact-us-links {
+    display: flex;
+    column-gap: 1rem;
+}
+
+@media screen and (max-width: 786px)  {
+    .main-footer {
+        padding: 0 1rem;
+    }
+    .links {
+        display: flex;
+        column-gap: 1rem;
+    }
+    .quick-links div a {
+        font-size: 1rem;
+    }
+    .contact-us-links {
+        column-gap: .5rem;
+    }
+    main .quick-links:nth-child(2) {
+        flex-direction: column;
+    }
+    .all-rights {
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+        font-size: 12px;
     }
 }
